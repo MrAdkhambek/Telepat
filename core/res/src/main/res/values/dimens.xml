@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <dimen name="text_size_40">40sp</dimen>
+    <dimen name="text_size_48">48sp</dimen>
+
+
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="message_user_image_size">60dp</dimen>
+    <dimen name="bottom_sheet_height">234dp</dimen>
+    <dimen name="bottom_sheet_height_2">260dp</dimen>
+    <dimen name="height_base_title_bar">168dp</dimen>
+
+</resources>

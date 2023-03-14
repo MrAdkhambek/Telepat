@@ -1,0 +1,492 @@
+<resources>
+
+    <style name="Text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Text.Poppins" />
+
+    <style name="Text.Montserrat" />
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        ////    Montserrat styles
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Montserrat.Regular">
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.30">
+        <item name="android:textSize">@dimen/text_size_30</item>
+    </style>
+
+    <style name="Text.Montserrat.Regular.32">
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Montserrat.Light">
+        <item name="fontFamily">@font/montserrat_light</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.10">
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.30">
+        <item name="android:textSize">@dimen/text_size_30</item>
+    </style>
+
+    <style name="Text.Montserrat.Light.32">
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Montserrat.Medium">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.10">
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.30">
+        <item name="android:textSize">@dimen/text_size_30</item>
+    </style>
+
+    <style name="Text.Montserrat.Medium.32">
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Montserrat.Bold">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.28">
+        <item name="android:textSize">@dimen/text_size_28</item>
+    </style>
+
+    <style name="Text.Montserrat.Bold.32">
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Montserrat.SemiBold">
+        <item name="fontFamily">@font/montserrat_semi_bold</item>
+    </style>
+
+    <style name="Text.Montserrat.SemiBold.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Montserrat.SemiBold.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Montserrat.SemiBold.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Montserrat.SemiBold.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Montserrat.SemiBold.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Montserrat.SemiBold.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Montserrat.SemiBold.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        ////    Poppins styles
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Poppins.Regular">
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="Text.Poppins.Regular.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Poppins.Regular.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Poppins.Regular.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Poppins.Regular.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Poppins.Regular.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Poppins.Regular.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Poppins.Regular.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Poppins.Light">
+        <item name="fontFamily">@font/montserrat_light</item>
+    </style>
+
+    <style name="Text.Poppins.Light.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Poppins.Light.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Poppins.Light.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Poppins.Light.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Poppins.Light.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Poppins.Light.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Poppins.Light.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Poppins.Medium">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="Text.Poppins.Medium.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Poppins.Medium.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Poppins.Medium.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Poppins.Medium.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Poppins.Medium.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Poppins.Medium.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Poppins.Medium.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="Text.Poppins.Bold">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="Text.Poppins.Bold.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Poppins.Bold.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Poppins.Bold.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Poppins.Bold.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Poppins.Bold.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Poppins.Bold.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Poppins.Bold.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    /////////////////////////////////////////////////////////////////////
+
+    <style name="Text.Poppins.SemiBold">
+        <item name="fontFamily">@font/montserrat_semi_bold</item>
+    </style>
+
+    <style name="Text.Poppins.SemiBold.12">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Text.Poppins.SemiBold.14">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text.Poppins.SemiBold.16">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="Text.Poppins.SemiBold.18">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="Text.Poppins.SemiBold.20">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="Text.Poppins.SemiBold.22">
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+
+    <style name="Text.Poppins.SemiBold.24">
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+    <!--
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////
+    -->
+
+    <style name="collapsingToolbarLayoutTitleColor" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="NavItemStyle" parent="Text.Montserrat.Bold.16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:drawablePadding">@dimen/dp_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/dp_16</item>
+        <item name="android:paddingEnd">@dimen/dp_16</item>
+        <item name="android:textColor">@color/rhino</item>
+    </style>
+
+    <style name="SwitchButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+<!--        <item name="android:textColor">@color/color_switch_text</item>-->
+<!--        <item name="backgroundTint">@color/color_switch_stroke</item>-->
+        <item name="strokeColor">@color/sail</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">6dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+    </style>
+
+    <style name="style_chat_item" parent="Text.Montserrat.Bold.12">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+        <item name="android:textColor">@color/cornflower_blue</item>
+    </style>
+
+    <style name="style_chat_action">
+        <item name="android:layout_width">@dimen/dp_36</item>
+        <item name="android:layout_height">@dimen/dp_36</item>
+        <item name="android:layout_margin">@dimen/dp_12</item>
+    </style>
+
+
+</resources>

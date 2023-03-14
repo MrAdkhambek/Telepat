@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="root_container" />
+
+    <declare-styleable name="CustomTheme">
+        <attr name="dividerColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="bermuda">#78E0B4</color>
+    <color name="rhino">#353F5A</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#6AAEE5</color>
+
+    <color name="rhino_alpha_10">#1A353F5A</color>
+    <color name="cornflower_blue">#6AAEE5</color>
+    <color name="alice_blue">#F1F9FF</color>
+
+    <color name="athens_gray">#F0F2F8</color>
+    <color name="sail">#BCE0FD</color>
+
+    <color name="link_water">#DCE3F7</color>
+
+
+</resources>

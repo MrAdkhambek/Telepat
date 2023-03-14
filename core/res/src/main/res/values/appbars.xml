@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ChatToolbarAppearance" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+</resources>

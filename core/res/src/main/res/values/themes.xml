@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.Default" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- General theme colors -->
+        <item name="colorPrimary">@color/defaultColorPrimary</item>
+        <item name="colorPrimaryDark">@color/defaultColorPrimaryDark</item>
+        <item name="colorAccent">@color/defaultColorAccent</item>
+        <item name="android:colorBackground">@color/defaultBackground</item>
+        <item name="android:colorForeground">@color/defaultForeground</item>
+
+        <!-- Text Appearance styles -->
+        <item name="android:textViewStyle">@style/Text.Montserrat.Regular.14</item>
+        <item name="android:textColorPrimary">@color/defaultTextColorPrimary</item>
+        <item name="android:textColorSecondary">@color/defaultTextColorSecondary</item>
+        <item name="android:textColorTertiary">@color/defaultTextColorTertiary</item>
+        <item name="android:textColorLink">@color/defaultTextColorLink</item>
+        <item name="android:textColorHint">@color/defaultTextColorTertiary</item>
+        <item name="android:textColorPrimaryInverse">@color/defaultTextColorPrimaryInverse</item>
+        <item name="android:textColorSecondaryInverse">@color/defaultTextColorSecondaryInverse
+        </item>
+        <item name="android:textColorTertiaryInverse">@color/defaultTextColorTertiaryInverse</item>
+        <item name="android:textColorLinkInverse">@color/defaultTextColorLinkInverse</item>
+        <item name="android:textColorHintInverse">@color/defaultTextColorTertiaryInverse</item>
+
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- Customize your theme here. -->
+        <item name="dividerColor">@color/defaultDividerColor</item>
+
+        <!-- Bottom Sheet widget style attributes -->
+        <item name="bottomSheetStyle">@style/AppStandardBottomSheet</item>
+        <item name="bottomSheetDialogTheme">@style/AppModalBottomSheet</item>
+
+    </style>
+
+    <style name="Theme.Default.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Telepat.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Telepat.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

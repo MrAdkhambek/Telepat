@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default Theme -->
+    <color name="defaultColorPrimary">@color/rhino</color>
+    <color name="defaultColorPrimaryDark">@color/rhino</color>
+    <color name="defaultColorAccent">@color/bermuda</color>
+    <color name="defaultBackground">@color/athens_gray</color>
+    <color name="defaultForeground">@color/sail</color>
+    <color name="defaultDividerColor">@color/link_water</color>
+
+    <color name="defaultTextColorPrimary">@android:color/white</color>
+    <color name="defaultTextColorSecondary">@android:color/white</color>
+    <color name="defaultTextColorTertiary">@android:color/white</color>
+    <color name="defaultTextColorLink">@color/sail</color>
+
+    <color name="defaultTextColorPrimaryInverse">@color/sail</color>
+    <color name="defaultTextColorSecondaryInverse">@color/sail</color>
+    <color name="defaultTextColorTertiaryInverse">@color/sail</color>
+    <color name="defaultTextColorLinkInverse">@color/sail</color>
+
+</resources>

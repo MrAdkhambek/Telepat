@@ -1,0 +1,1 @@
+/Users/admin/AndroidStudioProjects/Telepat/buildSrc/build/classes/kotlin/main/Config.class

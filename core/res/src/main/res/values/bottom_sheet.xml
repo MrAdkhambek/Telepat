@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppStandardBottomSheet">
+        <item name="android:elevation">8dp</item>
+        <item name="behavior_hideable">false</item>
+        <item name="behavior_draggable">true</item>
+        <item name="behavior_skipCollapsed">false</item>
+        <item name="behavior_peekHeight">@dimen/dp_72</item>
+        <item name="behavior_fitToContents">true</item>
+    </style>
+
+    <style name="AppModalBottomSheet" parent="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheet</item>
+    </style>
+
+    <style name="ModalBottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <!-- Apply attributes here -->
+    </style>
+
+</resources>
