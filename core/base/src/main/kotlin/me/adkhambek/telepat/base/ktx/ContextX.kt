@@ -1,5 +1,6 @@
 package me.adkhambek.telepat.base.ktx
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.util.TypedValue
 import androidx.annotation.AttrRes
@@ -16,6 +17,7 @@ public fun Context.getColorFromAttr(
 }
 
 
+@SuppressLint("InternalInsetResource")
 public fun Context.getNavigationBarHeight(): Int {
     val id: Int = resources.getIdentifier(
         "navigation_bar_height",

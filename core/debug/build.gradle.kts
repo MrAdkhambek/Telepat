@@ -4,12 +4,7 @@
 )
 
 plugins {
-    alias(libs.plugins.anvil)
     id("com.adkhambek.android.library")
-}
-
-anvil {
-    generateDaggerFactories.set(true)
 }
 
 dependencies {

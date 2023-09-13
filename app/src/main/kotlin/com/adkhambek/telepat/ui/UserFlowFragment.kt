@@ -8,13 +8,11 @@ import com.adkhambek.auth.api.User
 import com.adkhambek.di.ComponentHolder
 import com.adkhambek.di.android.bindings
 import com.adkhambek.di.android.retainComponent
-import com.adkhambek.di.scope.UserScope
 import com.adkhambek.telepat.base.FlowFragment
 import com.adkhambek.telepat.di.component.UserComponent
 import com.github.terrakok.cicerone.BackTo
 import com.github.terrakok.cicerone.NavigatorHolder
 import com.github.terrakok.cicerone.Replace
-import com.squareup.anvil.annotations.ContributesTo
 import javax.inject.Inject
 
 class UserFlowFragment : FlowFragment(), ComponentHolder<UserComponent> {
@@ -27,10 +25,8 @@ class UserFlowFragment : FlowFragment(), ComponentHolder<UserComponent> {
         val user = requireArguments().getParcelable<User>(ARG_USER)
         requireNotNull(user) { "User not found by key : $ARG_USER" }
 
-        requireActivity()
-            .bindings<UserComponent.ParentBindings>()
-            .userComponentFactory()
-            .create(user = user)
+        val parent = requireActivity().bindings<UserComponent.ParentBindings>()
+        UserComponent(parent, user)
     }
 
     @Inject lateinit var fragmentFactory: FragmentFactory
@@ -54,7 +50,6 @@ class UserFlowFragment : FlowFragment(), ComponentHolder<UserComponent> {
         childFragmentManager.fragmentFactory = fragmentFactory
     }
 
-    @ContributesTo(UserScope::class)
     interface UserBinding {
         fun inject(fragment: UserFlowFragment)
     }

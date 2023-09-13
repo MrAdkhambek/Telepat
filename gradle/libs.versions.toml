@@ -11,21 +11,18 @@ androidDesugarJdkLibs = "1.2.2"
 androidxLifecycle = "2.5.1"
 androidxCustomView = "1.0.0-rc01"
 
-compose = "1.3.0"
-composeCompiler = "1.3.0"
 accompanist = "0.25.0"
 
-kotlinVersion = "1.7.10"
-kotlin-ksp = "1.7.10-1.0.6"
-kotlinCoroutinesVersion = "1.6.4"
-kotlinxSerializationJson = "1.3.3"
+kotlinVersion = "1.9.0"
+kotlin-ksp = "1.9.0-1.0.12"
+kotlinCoroutinesVersion = "1.7.1"
+kotlinxSerializationJson = "1.6.0"
 
 kotlinpoet = "1.12.0"
 
 glide = "4.14.1"
 
-anvil = "2.4.2"
-dagger = "2.44.2"
+dagger = "2.48"
 
 google-gsm-v = "4.3.8"
 mviOrbitVersion = "4.3.2"
@@ -39,7 +36,6 @@ pluto = "2.0.6"
 [plugins]
 android-app = { id = "com.android.application", version.ref = "agp" }
 android-lib = { id = "com.android.library", version.ref = "agp" }
-anvil = { id = "com.squareup.anvil", version.ref = "anvil" }
 google-gsm = { id = "com.google.gms.google-services", version.ref = "google-gsm-v" }
 
 
@@ -58,11 +54,6 @@ google-ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "symbol-pr
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
 kotlin-serialization-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-serialization", version.ref = "kotlinVersion" }
 kotlin-parcelize-gradlePlugin = { group = "org.jetbrains.kotlin.plugin.parcelize", name = "org.jetbrains.kotlin.plugin.parcelize.gradle.plugin", version.ref = "kotlinVersion" }
-
-anvil-gradlePlugin = { group = "com.squareup.anvil", name = "gradle-plugin", version.ref = "anvil" }
-anvil-annotations = { group = "com.squareup.anvil", name = "annotations", version.ref = "anvil" }
-anvil-compiler-api = { group = "com.squareup.anvil", name = "compiler-api", version.ref = "anvil" }
-anvil-compiler-utils = { group = "com.squareup.anvil", name = "compiler-utils", version.ref = "anvil" }
 
 kotlinpoet-core = { group = "com.squareup", name = "kotlinpoet", version.ref = "kotlinpoet" }
 kotlinpoet-ksp = { group = "com.squareup", name = "kotlinpoet-ksp", version.ref = "kotlinpoet" }
@@ -92,7 +83,6 @@ preferenceStore = "androidx.datastore:datastore-preferences:1.0.0"
 coreKtx = "androidx.core:core-ktx:1.8.0"
 fragmentKtx = "androidx.fragment:fragment-ktx:1.5.2"
 activityKtx = "androidx.activity:activity-ktx:1.5.1"
-activity-compose = "androidx.activity:activity-compose:1.5.1"
 
 material = "com.google.android.material:material:1.8.0"
 
@@ -103,21 +93,6 @@ lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", versi
 lifecycle-common = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "androidxLifecycle" }
 lifecycle-viewModel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
 
-compose-material3 = "androidx.compose.material3:material3:1.0.0-alpha15"
-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
-compose-test = { module = "androidx.compose.ui:ui-test", version.ref = "compose" }
-compose-text = { module = "androidx.compose.ui:ui-text", version.ref = "compose" }
-compose-uiUtil = { module = "androidx.compose.ui:ui-util", version.ref = "compose" }
-compose-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
-compose-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "compose" }
-compose-ui-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
-compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
-compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
-compose-layout = { module = "androidx.compose.foundation:foundation-layout", version.ref = "compose" }
-compose-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
-compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose" }
-
-compose-paging = "androidx.paging:paging-compose:1.0.0-alpha15"
 paging-runtime = "androidx.paging:paging-runtime-ktx:3.1.1"
 
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlinVersion" }
@@ -144,7 +119,6 @@ glide-okhttp3 = { group = "com.github.bumptech.glide", name = "okhttp3-integrati
 glide-recyclerview = { group = "com.github.bumptech.glide", name = "recyclerview-integration", version.ref = "glide" }
 
 mvi-core = { module = "org.orbit-mvi:orbit-core", version.ref = "mviOrbitVersion" }
-mvi-compose = { module = "org.orbit-mvi:orbit-compose", version.ref = "mviOrbitVersion" }
 mvi-viewmodel = { module = "org.orbit-mvi:orbit-viewmodel", version.ref = "mviOrbitVersion" }
 mvi-test = { module = "org.orbit-mvi:orbit-test", version.ref = "mviOrbitVersion" }
 
@@ -244,7 +218,6 @@ accompanist = [
 
 mvi-orbit = [
     "mvi-core",
-    "mvi-compose",
     "mvi-viewmodel"
 ]
 
@@ -272,21 +245,6 @@ lifecycle = [
     "lifecycle-runtime",
     "lifecycle-viewModel",
     "lifecycle-extensions"
-]
-
-compose = [
-    "compose-ui",
-    "compose-material3",
-    "compose-test",
-    "compose-text",
-    "compose-uiUtil",
-    "compose-layout",
-    "compose-runtime",
-    "compose-ui-test",
-    "compose-material",
-    "compose-foundation",
-    "compose-paging",
-    "compose-material-icons-extended"
 ]
 
 glide = [

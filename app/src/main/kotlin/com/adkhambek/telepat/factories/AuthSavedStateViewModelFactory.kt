@@ -6,16 +6,13 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.savedstate.SavedStateRegistryOwner
 import com.adkhambek.di.DaggerMap
-import com.adkhambek.di.SingleIn
 import com.adkhambek.di.android.vm.AssistedSavedStateViewModelFactory
 import com.adkhambek.di.android.vm.InjectingSavedStateViewModelFactory
-import com.adkhambek.di.scope.AppScope
-import com.squareup.anvil.annotations.ContributesBinding
 import javax.inject.Inject
 import javax.inject.Provider
+import javax.inject.Singleton
 
-@SingleIn(AppScope::class)
-@ContributesBinding(scope = AppScope::class)
+@Singleton
 class AuthSavedStateViewModelFactory @Inject constructor(
     private val assistedFactories: DaggerMap<Class<out ViewModel>, AssistedSavedStateViewModelFactory<out ViewModel>>,
     private val viewModelProviders: DaggerMap<Class<out ViewModel>, Provider<ViewModel>>,

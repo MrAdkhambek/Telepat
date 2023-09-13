@@ -34,7 +34,8 @@ class MainActivity :
     ComponentHolder<ActivityRetainComponent> {
 
     override val component: ActivityRetainComponent by retainComponent { scope, app ->
-        app.bindings<ParentBindings>().activityComponentFactory().create(scope)
+        val parent = app.bindings<ParentBindings>()
+        ActivityRetainComponent(parent, scope)
     }
 
     @Inject lateinit var savedStateViewModelFactory: InjectingSavedStateViewModelFactory

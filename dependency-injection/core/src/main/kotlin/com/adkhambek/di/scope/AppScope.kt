@@ -2,8 +2,16 @@
 
 package com.adkhambek.di.scope
 
-public abstract class AppScope private constructor()
-public abstract class ActivityRetainScope private constructor()
+import javax.inject.Scope
+import kotlin.annotation.AnnotationRetention.RUNTIME
 
-public abstract class UserScope private constructor()
+@Scope
+@MustBeDocumented
+@Retention(RUNTIME)
+public annotation class ActivityRetainScope
+
+@Scope
+@MustBeDocumented
+@Retention(RUNTIME)
+public annotation class UserScope
 

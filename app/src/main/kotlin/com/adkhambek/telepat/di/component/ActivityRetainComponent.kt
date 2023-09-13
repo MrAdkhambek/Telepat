@@ -1,29 +1,31 @@
 package com.adkhambek.telepat.di.component
 
-import com.adkhambek.di.SingleIn
 import com.adkhambek.di.scope.ActivityRetainScope
-import com.adkhambek.di.scope.AppScope
 import com.adkhambek.telepat.MainActivity
-import com.squareup.anvil.annotations.ContributesSubcomponent
-import com.squareup.anvil.annotations.ContributesTo
 import dagger.BindsInstance
+import dagger.Subcomponent
 import kotlinx.coroutines.CoroutineScope
 
-@SingleIn(ActivityRetainScope::class)
-@ContributesSubcomponent(scope = ActivityRetainScope::class, parentScope = AppScope::class)
-interface ActivityRetainComponent {
+@ActivityRetainScope
+@Subcomponent
+interface ActivityRetainComponent : UserComponent.ParentBindings {
 
     fun inject(mainActivity: MainActivity)
 
-    @ContributesSubcomponent.Factory
+    @Subcomponent.Factory
     interface Factory {
         fun create(
-            @BindsInstance scope: CoroutineScope
+            @BindsInstance scope: CoroutineScope,
         ): ActivityRetainComponent
     }
 
-    @ContributesTo(AppScope::class)
     interface ParentBindings {
         fun activityComponentFactory(): Factory
+    }
+
+    companion object {
+        operator fun invoke(parent: ParentBindings, scope: CoroutineScope): ActivityRetainComponent {
+            return parent.activityComponentFactory().create(scope)
+        }
     }
 }

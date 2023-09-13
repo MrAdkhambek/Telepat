@@ -15,7 +15,6 @@ dependencies {
     implementation(libs.kotlin.parcelize.gradlePlugin)
     implementation(libs.kotlin.serialization.gradlePlugin)
     implementation(libs.google.ksp.gradlePlugin)
-    implementation(libs.anvil.gradlePlugin)
 }
 
 gradlePlugin {

@@ -6,7 +6,6 @@ import com.adkhambek.app.Config
 import com.adkhambek.app.configureKotlinAndroid
 import com.adkhambek.app.configureTestAndroid
 import com.android.build.gradle.LibraryExtension
-import com.squareup.anvil.plugin.AnvilExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension
@@ -23,17 +22,12 @@ class AndroidDataSourceActualConventionPlugin : Plugin<Project> {
                 apply("org.jetbrains.kotlin.plugin.serialization")
                 apply("kotlin-parcelize")
                 apply("com.google.devtools.ksp")
-                apply("com.squareup.anvil")
             }
 
             extensions.configure<LibraryExtension> {
                 configureKotlinAndroid(this)
                 configureTestAndroid(this)
                 defaultConfig.targetSdk = Config.targetSdkVersion
-            }
-
-            extensions.configure<AnvilExtension> {
-                this.generateDaggerFactories.set(true)
             }
 
             val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
@@ -45,7 +39,6 @@ class AndroidDataSourceActualConventionPlugin : Plugin<Project> {
                 // DI
                 add("implementation", libs.findLibrary("dagger").get())
                 add("implementation", project(":dependency-injection:core"))
-                add("anvil", project(":dependency-injection:generators"))
             }
         }
     }

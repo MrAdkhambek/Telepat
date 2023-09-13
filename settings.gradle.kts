@@ -48,7 +48,6 @@ include(
 include(
     ":dependency-injection:core",
     ":dependency-injection:android",
-    ":dependency-injection:generators",
 )
 
 include(
